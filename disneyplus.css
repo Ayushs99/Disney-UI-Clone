@@ -82,7 +82,7 @@ body {
 }
 
 .corosol {
-    height: 92vh;
+    margin:0 auto;
     width: 100%;
     position: relative;
     background-image: url("https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8726/808726-i");
