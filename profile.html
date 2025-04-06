@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" href="./disne+ logo/disney logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* background-color: #0f172a; */
+            background-color: rgb(14, 14, 34);
+
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .left-nav {
+            width: 80px;
+            height: 100vh;
+            /* background: #1e293b; */
+            padding: 20px 0;
+            position: fixed;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        .select {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            background: #334155;
+        }
+
+        .icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .main-content {
+            margin-left: 80px;
+            padding: 40px;
+            width: calc(100% - 80px);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .form-card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .form-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .form-card h2 {
+            color: #60a5fa;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-card input {
+            width: 100%;
+            padding: 12px 15px;
+            background: #334155;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-card input:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+        }
+
+        .form-card input::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-card button {
+            width: 100%;
+            padding: 12px 20px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-card button:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .success {
+            background: rgba(34, 197, 94, 0.1);
+            color: #34d399;
+            border: 1px solid #34d399;
+        }
+
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            color: #f87171;
+            border: 1px solid #f87171;
+        }
+
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left-nav">
+        <div class="logo">
+            <a href="disneyplus.html"><img src="../video audio/disne+ logo/disney logo.svg" alt="Disney+ logo"></a>
+        </div>
+        <div class="select">
+            <div class="icon"><img src="./disne+ logo/profile.svg" alt="Profile"></div>
+            <div class="icon"><img src="./disne+ logo/search.svg" alt="Search"></div>
+            <div class="icon"><img src="./disne+ logo/home.svg" alt="Home"></div>
+            <div class="icon"><img src="./disne+ logo/tv.svg" alt="TV"></div>
+            <div class="icon"><img src="./disne+ logo/movie.svg" alt="Movie"></div>
+            <div class="icon"><img src="./disne+ logo/history.svg" alt="History"></div>
+            <div class="icon"><img src="./disne+ logo/blocks.svg" alt="Blocks"></div>
+            <div class="icon"><img src="https://img1.hotstarext.com/image/upload/w_200,h_200,c_fill/v2/feature/profile/38_jv.png" height="25px" alt="Profile Pic"></div>
+            <div class="icon"><a href="#"><img src="./disne+ logo/logout.png" height="25px" alt="Logout"></a></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="profile-header">
+            <h1>Profile Settings</h1>
+        </div>
+        <div class="profile-grid">
+            <form method="post" class="form-card">
+                <h2>Update Profile</h2>
+                <div class="form-group">
+                    <input type="text" name="new_username" placeholder="New Username" value="" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="new_email" placeholder="New Email" value="" required>
+                </div>
+                <button type="submit" name="update_profile">Save Changes</button>
+            </form>
+
+            <form method="post" class="form-card">
+                <h2>Change Password</h2>
+                <div class="form-group">
+                    <input type="password" name="old_password" placeholder="Old Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="new_password" placeholder="New Password" required>
+                </div>
+                <button type="submit" name="change_password">Change Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
