@@ -347,6 +347,7 @@ footer{
     }
     .bar{
         width: 40%;
+        top:58vh;
     }
     .card-3{
         width: 23%;
@@ -358,6 +359,10 @@ footer{
     .card-1:hover,.card-2:hover,.card-3:hover{
         transition: .5s ease-in-out;
         transform: scale(1.02);
+    }
+    .content{
+        width: 40vw;
+        top:10vh;
     }
 }
 
@@ -403,7 +408,7 @@ footer{
         height: 70%;
     }
     .corosol{
-        width: 111%;
+        height: 72vh;
     }
     #video{
         /* visibility: hidden; */
